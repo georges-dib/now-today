@@ -1,0 +1,13 @@
+body {
+    font-size: 36px;
+    color: white;
+    background-color: black;
+}
+
+.wrapper__time {
+    font-size: 1.5em;
+}
+
+.wrapper__date {
+    font-size: 1.5em;
+}
