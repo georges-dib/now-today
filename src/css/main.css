@@ -1,13 +1,82 @@
 body {
+    /* font-family: 'Orbitron', sans-serif; */
     font-size: 36px;
     color: white;
     background-color: black;
+    margin: 0;
+}
+
+#wrapper {
+    padding: 0 1em;
 }
 
 .wrapper__time {
-    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+.wrapper__time p, .wrapper__date p {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.time__hours__container, .time__minutes__container, .time__hours-minutes-separator {
+    font-size: 8em;
+    line-height: .8em;
+}
+
+.time__hours-minutes-separator {
+    display: none;
+}
+
+.time__seconds-meridian__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.time__seconds__container, .time__meridian__container, .time__hours-minutes-separator {
+    font-size: 2em;
 }
 
 .wrapper__date {
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+
+    .time__hours__container, .time__minutes__container, .time__hours-minutes-separator {
+        font-size: 15em;
+    }
+    @media (orientation:portrait){
+        
+    }
+
+    @media (orientation:landscape){
+        
+        .wrapper__time {
+            flex-direction: row;
+        }
+
+        .time__hours-minutes-separator {
+            display: inline;
+        }
+
+        .time__seconds-meridian__container {
+            flex-direction: column;
+        }
+
+        .wrapper__date {
+            font-size: 1.5em;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .time__hours__container, .time__minutes__container, .time__hours-minutes-separator {
+        font-size: 15em;
+    }
 }

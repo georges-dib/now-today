@@ -5,7 +5,6 @@ import { TimeDisplay } from "./time";
 const Display = (props) => {
     const [currentTime, setCurrentTime] = useState(new Date());
 
-
     /** DidMount */
     useEffect(()=>{
         setInterval(()=>{
