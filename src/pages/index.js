@@ -2,6 +2,7 @@ import * as React from "react";
 import { importLang } from "../common/text";
 import { Display } from "../components/display";
 import "../css/main.css";
+import "../css/analogClock.css";
 
 const lang = importLang();
 

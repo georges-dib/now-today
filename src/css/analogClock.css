@@ -1,0 +1,93 @@
+.time__analog-clock__outer {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    margin: 1.5em auto;
+    background-color: #282828;
+    position: relative;
+    overflow: hidden;
+}
+
+.clock__axis {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 3px;
+    height: 90%;
+    z-index: 1;
+}
+
+.clock__axis-primary {
+    background-color: aqua;
+}
+
+.clock__axis-primary-x {
+    transform: rotate(90deg);
+}
+
+.clock__axis-secondary {
+    background-color: violet;
+}
+
+.clock__axis-secondary-1 {
+    transform: rotate(30deg);
+}
+
+.clock__axis-secondary-2 {
+    transform: rotate(60deg);
+}
+.clock__axis-secondary-3 {
+    transform: rotate(120deg);
+}
+.clock__axis-secondary-4 {
+    transform: rotate(150deg);
+}
+
+.time__analog-clock__inner {
+    border-radius: 50%;
+    background-color: #282828;
+    position: absolute;
+    left: calc(50% - 4.75em);
+    top: calc(50% - 4.75em);
+    width: 9.5em;
+    height: 9.5em;
+    z-index: 2;
+}
+
+.clock__handle {
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    height: 50%;
+    z-index: 3;
+    transform-origin: bottom;
+} 
+
+.clock__handle-seconds {
+    background-color: red;
+    width: 1px;
+    z-index: 4;
+    height: 35%;
+    top: 15%;
+}
+.clock__handle-minutes {
+    width: 2px;
+    height: 30%;
+    top: 20%;
+}
+.clock__handle-hours {
+    width: 3px;
+    height: 20%;
+    top: 30%;
+}
+
+.time__analog-clock__center {
+    border-radius: 50%;
+    background-color: #4d4b63;
+    position: absolute;
+    left: calc(50% - .25em);
+    top: calc(50% - .25em);
+    width: .5em;
+    height: .5em;
+    z-index: 5;
+}
